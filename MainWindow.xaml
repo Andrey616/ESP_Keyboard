@@ -1,0 +1,64 @@
+﻿<Window x:Class="ESP_Keyboard.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:ESP_Keyboard"
+		mc:Ignorable="d"
+		ResizeMode="CanMinimize"
+		Title="ESP Keyboard" Height="330" Width="550">
+
+	<Grid>
+
+		<Border x:Name="BorderProdile" Style="{StaticResource GroupBorderProfile}">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+				</Grid.ColumnDefinitions>
+
+				<TextBox x:Name="TextBoxProfile" Grid.Column="1" Style="{StaticResource TextBoxProfile}"/>
+
+				<ComboBox x:Name="ComboBoxProfile" Grid.Column="1" Style="{StaticResource ProfileComboBox}">
+					<ComboBoxItem Content="Profile 1"/>
+					<ComboBoxItem Content="Profile 2"/>
+					<ComboBoxItem Content="Profile 3"/>
+				</ComboBox>
+			</Grid>
+		</Border>
+
+		<Border x:Name="BorderBut" Style="{StaticResource GroupBorderBut}">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+				</Grid.ColumnDefinitions>
+
+				<ComboBox x:Name="ComboBoxBut1" Grid.Row="1" Grid.Column="0"/>
+				<ComboBox x:Name="ComboBoxBut2" Grid.Row="1" Grid.Column="1"/>
+				<ComboBox x:Name="ComboBoxBut3" Grid.Row="1" Grid.Column="2"/>
+				<ComboBox x:Name="ComboBoxBut4" Grid.Row="0" Grid.Column="0"/>
+				<ComboBox x:Name="ComboBoxBut5" Grid.Row="0" Grid.Column="1"/>
+				<ComboBox x:Name="ComboBoxBut6" Grid.Row="0" Grid.Column="2"/>
+			</Grid>
+		</Border>
+		<TextBox x:Name="TextBoxVersion" Grid.Column="1" Style="{StaticResource TextBoxVersion}"/>
+		<Button x:Name="ButtonApp" Style="{StaticResource ButtonApp}" />
+        <Button x:Name="ButtonEdit" Style="{StaticResource ButtonEdit}"  Click="OpenEditor_Click"/>
+        <Button x:Name="ButtonExport" Style="{StaticResource ButtonExport}" Click="Export_Click"/>
+
+
+
+
+    </Grid>
+</Window>

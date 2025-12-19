@@ -136,7 +136,7 @@
 
         <!-- Стиль для ButtonExport -->
         <Style x:Key="ButtonExport" TargetType="Button">
-            <Setter Property="Content" Value="Export BD"/>
+            <Setter Property="Content" Value="Export"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Margin" Value="300,130,0,0"/>
             <Setter Property="VerticalAlignment" Value="Center"/>

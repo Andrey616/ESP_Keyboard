@@ -15,6 +15,11 @@ using System.Windows.Shapes;
 using System.Xml;
 using YourProject.Services;
 using YourProject.Services;
+using InTheHand.Net;
+using InTheHand.Net.Bluetooth;
+using InTheHand.Net.Sockets;
+using System;
+using System.IO;
 
 namespace ESP_Keyboard
 {
@@ -62,10 +67,12 @@ namespace ESP_Keyboard
 			{
 				comboBox.ItemsSource = dbService.GetMacros();
 				comboBox.DisplayMemberPath = "KeyCombination";
-				comboBox.SelectedValuePath = "Id";
-			}
+				comboBox.SelectedValuePath = "KeyName";
+                comboBox.SelectedIndex = 20; // установить 20-ю запись по умолчанию
+            }
+            
 
-		}
+        }
 		private void OpenEditor_Click(object sender, RoutedEventArgs e)
 		{
 			EditorDataBase editor = new EditorDataBase();
@@ -78,14 +85,24 @@ namespace ESP_Keyboard
 
         private void Export_Click(object sender, RoutedEventArgs e)
         {
-            var saveDialog = new SaveFileDialog();
-            saveDialog.Filter = "JSON files (*.json)|*.json";
-
-            if (saveDialog.ShowDialog() == true)
+            
+            try
             {
-                var dbService = new DatabaseService();
-                dbService.ExportForESP(saveDialog.FileName);
-                MessageBox.Show("Экспорт завершен!");
+                string macStr = "88:57:21:96:6B:12";
+                BluetoothAddress address = BluetoothAddress.Parse(macStr);
+                using var client = new BluetoothClient();
+                var endPoint = new BluetoothEndPoint(address, BluetoothService.SerialPort);
+                client.Connect(endPoint);
+
+                var stream = client.GetStream();
+                var bytes = System.Text.Encoding.ASCII.GetBytes($"0, {ComboBoxBut1.SelectedValue as string},\n1, {ComboBoxBut2.SelectedValue as string},\n2, {ComboBoxBut3.SelectedValue as string},\n3, {ComboBoxBut4.SelectedValue as string},\n4, {ComboBoxBut5.SelectedValue as string},\n5, {ComboBoxBut6.SelectedValue as string},\n");
+                stream.Write(bytes, 0, bytes.Length);
+
+                Console.WriteLine("Отправлено");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}");
             }
         }
 

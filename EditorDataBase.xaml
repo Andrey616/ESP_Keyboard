@@ -12,7 +12,7 @@
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Сочетание" Binding="{Binding KeyCombination}"/>
                 <DataGridTextColumn Header="Описание" Binding="{Binding Description}"/>
-                <DataGridTextColumn Header="Клавиша" Binding="{Binding KeyName}"/>
+                <DataGridTextColumn Header="HID Codes" Binding="{Binding KeyName}"/>
                 <DataGridTemplateColumn Header="Удалить">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

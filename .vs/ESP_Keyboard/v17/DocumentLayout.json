@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{80172BB9-3961-452E-97FE-257DF5C8267D}|Services{80172BB9-3961-452E-97FE-257DF5C8267D}|C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\DatabaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80172BB9-3961-452E-97FE-257DF5C8267D}|Services{80172BB9-3961-452E-97FE-257DF5C8267D}|solutionrelative:DatabaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\editordatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:editordatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\editordatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 250,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -61,21 +61,19 @@
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T19:08:06.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T19:08:06.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAIwFgAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T08:28:25.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T08:28:25.232Z"
             },
             {
               "$type": "Document",
@@ -85,32 +83,30 @@
               "RelativeDocumentMoniker": "EditorDataBase.xaml.cs",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\EditorDataBase.xaml.cs",
               "RelativeToolTip": "EditorDataBase.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T13:32:27.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T13:32:27.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T19:08:01.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T19:08:01.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\DatabaseService.cs",
               "RelativeDocumentMoniker": "DatabaseService.cs",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\DatabaseService.cs",
               "RelativeToolTip": "DatabaseService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAAABIBAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T08:24:21.844Z",
               "EditorCaption": ""
@@ -125,8 +121,7 @@
               "RelativeToolTip": "Macro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T08:22:23.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T08:22:23.82Z"
             },
             {
               "$type": "Document",
@@ -138,8 +133,7 @@
               "RelativeToolTip": "MainViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T14:14:02.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T14:14:02.088Z"
             },
             {
               "$type": "Document",
@@ -151,8 +145,7 @@
               "RelativeToolTip": "EditorDataBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T13:41:37.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T13:41:37.694Z"
             },
             {
               "$type": "Document",
@@ -164,8 +157,7 @@
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T19:08:05.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T19:08:05.619Z"
             },
             {
               "$type": "Document",
@@ -176,8 +168,7 @@
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\EditorDataBase.xaml",
               "RelativeToolTip": "EditorDataBase.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T13:28:32.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T13:28:32.357Z"
             }
           ]
         }

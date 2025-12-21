@@ -10,14 +10,47 @@ namespace YourProject.Services
 {
 	public class DatabaseService
 	{
-		private string connectionString = "Data Source=macros.db";
+
+        private string connectionStringInProfile = "Data Source=ProfileDB.db";
+
+		public void InitializeProfelDatabase()
+		{
+			
+
+            
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+				using (var command = new SQLiteCommand(connection))
+				{
+					command.CommandText = @"CREATE TABLE IF NOT EXISTS Profile (
+                                Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                Profile TEXT NOT NULL,
+                                IdMakros TEXT NOT NULL)";
+					command.ExecuteNonQuery();
+					command.CommandText = "SELECT COUNT(*) FROM Profile";
+					var count = Convert.ToInt64(command.ExecuteScalar());
+
+					if (count == 0)
+					{
+						command.CommandText = "INSERT INTO Profile (Profile, IdMakros) VALUES ('Profile1', '0 0 0 0 0 0'), ('Profile2', '0 0 0 0 0 0'), ('Profile3', '0 0 0 0 0 0'), ('Profile4', '0 0 0 0 0 0'), ('Profile5', '0 0 0 0 0 0')";
+
+
+						command.ExecuteNonQuery();
+                    }
+				}
+            }
+        }
+
+
+        private string connectionString = "Data Source=macros.db";
 
 		public void InitializeDatabase()
 		{
 			if (!File.Exists("macros.db"))
 			{
-				using (var connection = new SqliteConnection(connectionString))
-				{
+			using (var connection = new SqliteConnection(connectionString))
+			{
 					connection.Open();
 					var command = connection.CreateCommand();
 					command.CommandText = @"
@@ -284,6 +317,31 @@ namespace YourProject.Services
 			}
 		}
 
+        public List<Porf> GetProfile()
+        {
+            var Profiles = new List<Porf>();
+            using (var connection = new SqliteConnection(connectionString))
+            {
+                connection.Open();
+                var command = connection.CreateCommand();
+                command.CommandText = "SELECT Id, Profile, IdMakros FROM Profile";
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Profiles.Add(new Porf
+                        {
+                            Id = reader.GetInt32(0),
+                            Profile = reader.IsDBNull(1) ? null : reader.GetString(1),
+                            IdMakros = reader.IsDBNull(2) ? null : reader.GetString(2),
+                        });
+                    }
+                }
+            }
+            return Profiles;
+        }
+
 		public List<Macro> GetMacros()
 		{
 			var macros = new List<Macro>();
@@ -310,7 +368,7 @@ namespace YourProject.Services
 			return macros;
 		}
 
-		public void UpdateMacro(Macro macro)
+        public void UpdateMacro(Macro macro)
 		{
 			try
 			{

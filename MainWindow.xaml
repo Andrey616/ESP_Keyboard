@@ -24,12 +24,8 @@
 
 				<TextBox x:Name="TextBoxProfile" Grid.Column="1" Style="{StaticResource TextBoxProfile}"/>
 
-				<ComboBox x:Name="ComboBoxProfile" Grid.Column="1" Style="{StaticResource ProfileComboBox}">
-					<ComboBoxItem Content="Profile 1"/>
-					<ComboBoxItem Content="Profile 2"/>
-					<ComboBoxItem Content="Profile 3"/>
-				</ComboBox>
-			</Grid>
+                <ComboBox x:Name="ComboBoxProfile" Grid.Column="1" Style="{StaticResource ProfileComboBox}"/>
+            </Grid>
 		</Border>
 
 		<Border x:Name="BorderBut" Style="{StaticResource GroupBorderBut}">
@@ -56,6 +52,7 @@
 		<Button x:Name="ButtonApp" Style="{StaticResource ButtonApp}" />
         <Button x:Name="ButtonEdit" Style="{StaticResource ButtonEdit}"  Click="OpenEditor_Click"/>
         <Button x:Name="ButtonExport" Style="{StaticResource ButtonExport}" Click="Export_Click"/>
+        <TextBlock x:Name="Test" HorizontalAlignment="Left" Margin="152,33,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
 
 

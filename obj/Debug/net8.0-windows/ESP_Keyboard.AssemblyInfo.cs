@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ESP_Keyboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8097e7f165f5f8d9ef25bba6876b7c6e7e68fd4b")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+927bc4e2a2e0dc170ffe186358adcbab51cb90a2")]
+>>>>>>> origin/main
 [assembly: System.Reflection.AssemblyProductAttribute("ESP_Keyboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ESP_Keyboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -68,7 +68,7 @@ namespace ESP_Keyboard
 				comboBox.ItemsSource = dbService.GetMacros();
 				comboBox.DisplayMemberPath = "KeyCombination";
 				comboBox.SelectedValuePath = "KeyName";
-                comboBox.SelectedIndex = 20; // установить 20-ю запись по умолчанию
+                comboBox.SelectedIndex = 0; // установить 0-ю запись по умолчанию
             }
             
 
@@ -95,7 +95,7 @@ namespace ESP_Keyboard
                 client.Connect(endPoint);
 
                 var stream = client.GetStream();
-                var bytes = System.Text.Encoding.ASCII.GetBytes($"0, {ComboBoxBut1.SelectedValue as string},\n1, {ComboBoxBut2.SelectedValue as string},\n2, {ComboBoxBut3.SelectedValue as string},\n3, {ComboBoxBut4.SelectedValue as string},\n4, {ComboBoxBut5.SelectedValue as string},\n5, {ComboBoxBut6.SelectedValue as string},\n");
+                var bytes = System.Text.Encoding.ASCII.GetBytes($"k0:{ComboBoxBut1.SelectedValue as string}\nk1:{ComboBoxBut2.SelectedValue as string}\nk2:{ComboBoxBut3.SelectedValue as string}\nk3:{ComboBoxBut4.SelectedValue as string}\nk4:{ComboBoxBut5.SelectedValue as string}\nk5:{ComboBoxBut6.SelectedValue as string}");
                 stream.Write(bytes, 0, bytes.Length);
 
                 Console.WriteLine("Отправлено");

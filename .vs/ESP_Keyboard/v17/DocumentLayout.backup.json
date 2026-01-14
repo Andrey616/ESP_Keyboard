@@ -61,8 +61,7 @@
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T19:08:06.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T19:08:06.992Z"
             },
             {
               "$type": "Document",
@@ -72,7 +71,11 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAI8AAAAAAAAAAAD4v7YAAAANAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAGIAAAAAAAAAAAAIwBoAAAABAAAAAAAAAA==",
+>>>>>>> origin/main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T08:28:25.232Z",
               "EditorCaption": ""
@@ -98,8 +101,7 @@
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T19:08:01.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T19:08:01.252Z"
             },
             {
               "$type": "Document",
@@ -111,8 +113,7 @@
               "RelativeToolTip": "DatabaseService.cs",
               "ViewState": "AgIAAHQBAAAAAAAAAAAAAL4BAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T08:24:21.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T08:24:21.844Z"
             },
             {
               "$type": "Document",

@@ -25,10 +25,6 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ESP_Keyboard
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	
 	public partial class MainWindow : Window
 	{
         public MainWindow()
@@ -77,19 +73,18 @@ namespace ESP_Keyboard
             {
                 try
                 {
-                    // УБЕРИТЕ List<int> - используйте существующее поле класса
                     currentNumbers = idMakros.Split(' ').Select(int.Parse).ToList();
                     Console.WriteLine($"Обработаны числа: {string.Join(", ", currentNumbers)}");
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Ошибка обработки IdMakros: {ex.Message}");
-                    currentNumbers = new List<int>(); // Сбрасываем при ошибке
+                    currentNumbers = new List<int>();
                 }
             }
             else
             {
-                currentNumbers = new List<int>(); // Сбрасываем если строка пустая
+                currentNumbers = new List<int>();
             }
         }
 

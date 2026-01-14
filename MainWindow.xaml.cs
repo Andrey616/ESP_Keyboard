@@ -25,10 +25,6 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ESP_Keyboard
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	
 	public partial class MainWindow : Window
 	{
         public MainWindow()
@@ -77,19 +73,18 @@ namespace ESP_Keyboard
             {
                 try
                 {
-                    // УБЕРИТЕ List<int> - используйте существующее поле класса
                     currentNumbers = idMakros.Split(' ').Select(int.Parse).ToList();
                     Console.WriteLine($"Обработаны числа: {string.Join(", ", currentNumbers)}");
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Ошибка обработки IdMakros: {ex.Message}");
-                    currentNumbers = new List<int>(); // Сбрасываем при ошибке
+                    currentNumbers = new List<int>();
                 }
             }
             else
             {
-                currentNumbers = new List<int>(); // Сбрасываем если строка пустая
+                currentNumbers = new List<int>();
             }
         }
 
@@ -148,7 +143,54 @@ namespace ESP_Keyboard
 
 
         }
-		private void OpenEditor_Click(object sender, RoutedEventArgs e)
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveCurrentProfile();
+        }
+
+        private void SaveCurrentProfile()
+        {
+            if (ComboBoxProfile.SelectedItem is Porf selectedProfile)
+            {
+                try
+                {
+                    
+                    List<int> currentSelections = new List<int>();
+
+                    foreach (var comboBox in comboBoxes)
+                    {
+                        if (comboBox != null)
+                        {
+                            currentSelections.Add(comboBox.SelectedIndex);
+                        }
+                    }
+                    string newIdMakros = string.Join(" ", currentSelections);
+                    selectedProfile.IdMakros = newIdMakros;
+                    var dbService = new DatabaseService();
+                    dbService.InitializeProfelDatabase();
+                    dbService.UpdateProfile(selectedProfile);
+                    currentNumbers = currentSelections;
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка сохранения: {ex.Message}",
+                                   "Ошибка",
+                                   MessageBoxButton.OK,
+                                   MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите профиль для сохранения",
+                               "Внимание",
+                               MessageBoxButton.OK,
+                               MessageBoxImage.Warning);
+            }
+        }
+
+        private void OpenEditor_Click(object sender, RoutedEventArgs e)
 		{
 			EditorDataBase editor = new EditorDataBase();
 			editor.Left = this.Left + 100;

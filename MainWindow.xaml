@@ -49,10 +49,10 @@
 			</Grid>
 		</Border>
 		<TextBox x:Name="TextBoxVersion" Grid.Column="1" Style="{StaticResource TextBoxVersion}"/>
-		<Button x:Name="ButtonApp" Style="{StaticResource ButtonApp}" />
-        <Button x:Name="ButtonEdit" Style="{StaticResource ButtonEdit}"  Click="OpenEditor_Click"/>
+        <Button x:Name="ButtonApp" Style="{StaticResource ButtonSeveProfile}" Click="SaveButton_Click" />
+        <Button x:Name="ButtonEdit" Style="{StaticResource ButtonEdit}" Click="OpenEditor_Click"/>
         <Button x:Name="ButtonExport" Style="{StaticResource ButtonExport}" Click="Export_Click"/>
-        <TextBlock x:Name="Test" HorizontalAlignment="Left" Margin="152,33,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        
 
 
 

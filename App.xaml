@@ -104,9 +104,9 @@
 
 		</Style>
 
-		<!-- Стиль для ButtonApp -->
-		<Style x:Key="ButtonApp" TargetType="Button">
-			<Setter Property="Content" Value="App"/>
+        <!-- Стиль для ButtonSeveProfile -->
+        <Style x:Key="ButtonSeveProfile" TargetType="Button">
+			<Setter Property="Content" Value="Save Profile"/>
 			<Setter Property="HorizontalAlignment" Value="Center"/>
 			<Setter Property="Margin" Value="300,0,0,30"/>
 			<Setter Property="VerticalAlignment" Value="Center"/>

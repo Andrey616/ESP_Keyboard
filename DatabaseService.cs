@@ -428,6 +428,24 @@ namespace YourProject.Services
             command.ExecuteNonQuery();
         }
 
+        public void UpdateProfile(Porf profile)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+
+                using (var command = new SQLiteCommand(connection))
+                {
+                    command.CommandText = "UPDATE Profile SET Profile = @Name, IdMakros = @IdMakros WHERE Id = @Id";
+                    command.Parameters.AddWithValue("@Name", profile.Profile);
+                    command.Parameters.AddWithValue("@IdMakros", profile.IdMakros ?? "");
+                    command.Parameters.AddWithValue("@Id", profile.Id);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void ExportForESP(string filePath)
         {
             var macros = GetMacros();

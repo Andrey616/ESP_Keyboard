@@ -1,3 +1,4 @@
+#include <FastLED.h>
 #include <BluetoothSerial.h>
 #include <BleKeyboard.h>
 #include <ArduinoJson.h>
@@ -6,7 +7,9 @@
 #include <EEPROM.h>
 #define EEPROM_SIZE 512
 
-#define LED_PIN 2
+#define LED_PIN 26
+#define LED_NUM 2
+CRGB leds[LED_NUM];
 struct StructTimeAndFlag {int key; unsigned long TimeMillisBut; bool LetGoFlagBut;};
 const int ButtonPins[] = {4, 16, 17, 5, 18, 19};
 const int ButtonCount = sizeof(ButtonPins) / sizeof(ButtonPins[0]);
@@ -70,7 +73,9 @@ void StartSetting(){
     BLEDevice::deinit(); 
     ESP_BT.begin("Keyboard_Setting", "1212");
     Serial.println("Bluetooth с паролем 1212");
-    digitalWrite(LED_PIN, 0);
+    fill_solid(leds, LED_NUM, CRGB(0,255,0)); 
+    FastLED.show();
+    //digitalWrite(LED_PIN, 0);
     const uint8_t* mac = esp_bt_dev_get_address();
     if (mac != NULL) {
         Serial.print("MAC: ");
@@ -149,7 +154,9 @@ void StartSetting(){
                 }
             }
         }
-        if (digitalRead(ButtonPins[0]) == LOW) {
+        if (digitalRead(ButtonPins[5]) == LOW) {
+            fill_solid(leds, LED_NUM, CRGB(0,0,0)); 
+            FastLED.show();
             ESP_BT.end();
             ESP.restart(); 
         }
@@ -158,6 +165,7 @@ void StartSetting(){
 
 
 void setup() {
+    FastLED.addLeds<WS2812, LED_PIN, GRB>(leds, LED_NUM);
     EEPROM.begin(EEPROM_SIZE);
     for (int PinBut; PinBut < ButtonCount; PinBut++) {
         pinMode(ButtonPins[PinBut], INPUT_PULLUP);
@@ -175,9 +183,22 @@ void setup() {
 }
 
 void loop() {
-    // Если клавиатура подключена то встроенный светодиод горит
+    // Если клавиатура подключена то светодиод горит
     bool connected = bleKeyboard.isConnected();
-    digitalWrite(LED_PIN, connected);
+    FastLED.setBrightness(70);
+    if (!connected){
+        FastLED.clear();
+        fill_solid(leds, LED_NUM, CRGB(255,0,0)); 
+        FastLED.show();
+        delay(700);
+        fill_solid(leds, LED_NUM, CRGB(0,0,0)); 
+        FastLED.show();
+        delay(700);
+    }
+    //fill_solid(leds, LED_NUM, CRGB(255,0,0));
+    //FastLED.show();
+    
+    //digitalWrite(LED_PIN, connected);
     unsigned long Time = millis();
 
     if (digitalRead(ButtonPins[2]) == LOW && digitalRead(ButtonPins[3]) == LOW){

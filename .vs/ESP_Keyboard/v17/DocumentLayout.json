@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80172BB9-3961-452E-97FE-257DF5C8267D}|Services{80172BB9-3961-452E-97FE-257DF5C8267D}|C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\DatabaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80172BB9-3961-452E-97FE-257DF5C8267D}|Services{80172BB9-3961-452E-97FE-257DF5C8267D}|solutionrelative:DatabaseService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9ED5930-B470-4BE3-B2CC-D453737FC727}|ESP_Keyboard.csproj|c:\\users\\andre\\gitkraken\\esp_keyboard\\editordatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,14 +54,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T19:08:06.992Z"
+              "WhenOpened": "2025-11-26T19:08:06.992Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -71,11 +72,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-<<<<<<< HEAD
               "ViewState": "AgIAAI8AAAAAAAAAAAD4v50AAAAUAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAGIAAAAAAAAAAAAIwBoAAAABAAAAAAAAAA==",
->>>>>>> origin/main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T08:28:25.232Z",
               "EditorCaption": ""
@@ -94,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -105,17 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\DatabaseService.cs",
               "RelativeDocumentMoniker": "DatabaseService.cs",
               "ToolTip": "C:\\Users\\andre\\GitKraken\\ESP_Keyboard\\DatabaseService.cs",
               "RelativeToolTip": "DatabaseService.cs",
-<<<<<<< HEAD
               "ViewState": "AgIAAHQBAAAAAAAAAAAAAL4BAAAJAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAPMAAAAAAAAAAAAAAEYBAABDAAAAAAAAAA==",
->>>>>>> origin/main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T08:24:21.844Z"
             },
